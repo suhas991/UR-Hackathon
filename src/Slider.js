@@ -33,7 +33,7 @@ export default function BasicSlider() {
     >
       <Overlay>
         <Wrapper>
-          <Title>CRYPTO MALL</Title>
+          <Title>CRYPT STORE</Title>
           <Subtitle>Explore , Collect and sell NFTs</Subtitle>
         </Wrapper>
       </Overlay>

@@ -24,7 +24,7 @@ export default function MyNavbar() {
     <>
       <Group position="apart" m="16px">
         <Group>
-          <img src={logo} alt="Failed" width="250px" height="75px" />
+          <img src={logo} alt="Failed" width="185px" height="50px" />
         </Group>
 
         <Group>
