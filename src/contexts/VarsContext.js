@@ -5,19 +5,22 @@ const myContext = createContext();
 //Provider function - Wrap the whole component tree Ex: in index.js
 
 export function VarsProvider({ children }) {
+  //This is for the provider Metamask
+  const [provider] = useState(
+    new ethers.providers.Web3Provider(window.ethereum)
+  );
+  const [signer] = useState(provider.getSigner());
 
-    //This is for the provider Metamask
-    const [provider, setProvider] = useState(new ethers.providers.Web3Provider(window.ethereum))
-    const [signer, setSigner] = useState(provider.getSigner())
- 
-    return ( 
+  return (
     <>
-    <myContext.Provider value={ { provider, signer}}>{children}</myContext.Provider>
+      <myContext.Provider value={{ provider, signer }}>
+        {children}
+      </myContext.Provider>
     </>
-    );
-  }
-  
-//Consumer function - Use this to extract data from context 
-  export function useVarsContext() {
-    return useContext(myContext);
-  }
+  );
+}
+
+//Consumer function - Use this to extract data from context
+export function useVarsContext() {
+  return useContext(myContext);
+}
