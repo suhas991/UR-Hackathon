@@ -6,10 +6,10 @@ const myContext = createContext();
 
 export function VarsProvider({ children }) {
   //This is for the provider Metamask
-  const [provider] = useState(
+  const [provider, setProvider] = useState(
     new ethers.providers.Web3Provider(window.ethereum)
   );
-  const [signer] = useState(provider.getSigner());
+  const [signer, setSigner] = useState(provider.getSigner());
 
   return (
     <>

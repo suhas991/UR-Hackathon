@@ -5,7 +5,8 @@ import Subtitle from "./Slider/SubTitle";
 
 const bogliasco =
   "https://i.pinimg.com/originals/47/33/29/473329429c3d113bf4435a35fe83507b.jpg";
-const countyClare = "https://i.etsystatic.com/21950283/r/il/e03689/3004732563/il_fullxfull.3004732563_5bt8.jpg";
+const countyClare =
+  "https://i.etsystatic.com/21950283/r/il/e03689/3004732563/il_fullxfull.3004732563_5bt8.jpg";
 const craterRock = "https://i.imgur.com/8DYumaY.jpg";
 const giauPass = "https://i.imgur.com/8IuucQZ.jpg";
 
@@ -32,7 +33,7 @@ export default function BasicSlider() {
     >
       <Overlay>
         <Wrapper>
-          <Title>NFT STORE </Title>
+          <Title>CRYPT STORE</Title>
           <Subtitle>Explore , Collect and sell NFTs</Subtitle>
         </Wrapper>
       </Overlay>
