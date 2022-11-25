@@ -2,6 +2,7 @@ import { Button, Group, Alert, Modal } from "@mantine/core";
 import { useState } from "react";
 import { useVarsContext } from "../contexts/VarsContext";
 
+const logo="";
 export default function MyNavbar() {
   const [walAddress, setWalAddress] = useState("");
   const [opened, setOpened] = useState(false);
@@ -23,7 +24,7 @@ export default function MyNavbar() {
   return (
     <>
       <Group position="apart" m="16px">
-        <Group>Logo</Group>
+        <Group>{logo}</Group>
 
         <Group>
           {walAddress}
